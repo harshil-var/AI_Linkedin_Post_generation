@@ -41,39 +41,39 @@ st.markdown("""
 
     /* Ambient Dark Backdrop with Glass Gradient */
     .stApp {
-        background: radial-gradient(circle at 15% 15%, rgba(10, 102, 194, 0.18) 0%, transparent 40%),
-                    radial-gradient(circle at 85% 85%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
+        background: radial-gradient(circle at 15% 15%, rgba(10, 102, 194, 0.2) 0%, transparent 45%),
+                    radial-gradient(circle at 85% 85%, rgba(139, 92, 246, 0.18) 0%, transparent 45%),
                     linear-gradient(135deg, #070a12 0%, #0b1120 50%, #0f172a 100%);
         color: #f3f4f6;
     }
 
     /* Glassmorphic Cards */
     .glass-card {
-        background: rgba(17, 25, 40, 0.55);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(17, 25, 40, 0.65);
+        border: 1px solid rgba(255, 255, 255, 0.12);
         border-radius: 20px;
         padding: 24px;
         margin-bottom: 24px;
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .glass-card:hover {
-        border-color: rgba(10, 102, 194, 0.4);
-        box-shadow: 0 12px 40px rgba(10, 102, 194, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        border-color: rgba(10, 102, 194, 0.45);
+        box-shadow: 0 16px 44px rgba(10, 102, 194, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.2);
     }
 
     /* Hero Banner Header */
     .hero-banner {
-        background: rgba(15, 23, 42, 0.65);
-        border: 1px solid rgba(10, 102, 194, 0.35);
+        background: rgba(15, 23, 42, 0.75);
+        border: 1px solid rgba(10, 102, 194, 0.4);
         border-radius: 24px;
         padding: 26px 36px;
         margin-bottom: 24px;
         backdrop-filter: blur(20px);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 30px rgba(10, 102, 194, 0.15);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 30px rgba(10, 102, 194, 0.2);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -81,18 +81,18 @@ st.markdown("""
     }
 
     .hero-title {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
         font-weight: 800;
         background: linear-gradient(90deg, #0a66c2 0%, #38bdf8 50%, #818cf8 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        margin-bottom: 4px;
+        margin-bottom: 6px;
         letter-spacing: -0.5px;
     }
 
     .hero-subtitle {
         color: #94a3b8;
-        font-size: 0.96rem;
+        font-size: 0.98rem;
         font-weight: 400;
         margin: 0;
     }
@@ -103,12 +103,12 @@ st.markdown("""
         align-items: center;
         justify-content: space-between;
         gap: 8px;
-        background: rgba(15, 23, 42, 0.6);
+        background: rgba(15, 23, 42, 0.65);
         border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 16px;
-        padding: 14px 20px;
+        border-radius: 18px;
+        padding: 16px 22px;
         margin-bottom: 24px;
-        backdrop-filter: blur(12px);
+        backdrop-filter: blur(14px);
     }
 
     .wf-step {
@@ -118,17 +118,18 @@ st.markdown("""
         font-size: 0.85rem;
         font-weight: 600;
         color: #94a3b8;
-        padding: 8px 14px;
+        padding: 10px 16px;
         border-radius: 12px;
         background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition: all 0.3s ease;
     }
 
     .wf-step.active {
-        background: rgba(10, 102, 194, 0.25);
-        border-color: rgba(56, 189, 248, 0.5);
+        background: rgba(10, 102, 194, 0.3);
+        border-color: rgba(56, 189, 248, 0.6);
         color: #38bdf8;
-        box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+        box-shadow: 0 0 18px rgba(56, 189, 248, 0.25);
     }
 
     .wf-arrow {
@@ -138,12 +139,12 @@ st.markdown("""
 
     /* LinkedIn Card Preview */
     .linkedin-preview-card {
-        background: rgba(15, 23, 42, 0.85);
-        border: 1px solid rgba(10, 102, 194, 0.35);
+        background: rgba(15, 23, 42, 0.88);
+        border: 1px solid rgba(10, 102, 194, 0.4);
         border-radius: 20px;
         padding: 24px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
-        backdrop-filter: blur(16px);
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(18px);
     }
 
     .linkedin-header {
@@ -154,8 +155,8 @@ st.markdown("""
     }
 
     .linkedin-avatar {
-        width: 46px;
-        height: 46px;
+        width: 48px;
+        height: 48px;
         border-radius: 50%;
         background: linear-gradient(135deg, #0a66c2 0%, #0284c7 100%);
         display: flex;
@@ -199,34 +200,34 @@ st.markdown("""
     }
 
     .badge-awaiting {
-        background: rgba(234, 179, 8, 0.15);
+        background: rgba(234, 179, 8, 0.18);
         color: #fde047;
-        border: 1px solid rgba(234, 179, 8, 0.35);
+        border: 1px solid rgba(234, 179, 8, 0.4);
     }
 
     .badge-approved {
-        background: rgba(34, 197, 94, 0.15);
+        background: rgba(34, 197, 94, 0.18);
         color: #4ade80;
-        border: 1px solid rgba(34, 197, 94, 0.35);
+        border: 1px solid rgba(34, 197, 94, 0.4);
     }
 
     .badge-rejected {
-        background: rgba(239, 68, 68, 0.15);
+        background: rgba(239, 68, 68, 0.18);
         color: #fca5a5;
-        border: 1px solid rgba(239, 68, 68, 0.35);
+        border: 1px solid rgba(239, 68, 68, 0.4);
     }
 
     /* KPI metric cards */
     .metric-card {
         background: rgba(255, 255, 255, 0.03);
-        border: 1px solid rgba(255, 255, 255, 0.06);
-        border-radius: 12px;
-        padding: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        padding: 14px;
         text-align: center;
     }
 
     .metric-val {
-        font-size: 1.25rem;
+        font-size: 1.3rem;
         font-weight: 700;
         color: #38bdf8;
     }
@@ -238,7 +239,31 @@ st.markdown("""
         letter-spacing: 0.5px;
     }
 
-    /* Custom Streamlit Form Elements */
+    /* Styled Radio & Form Controls */
+    div[data-testid="stRadio"] > label {
+        font-weight: 700 !important;
+        color: #38bdf8 !important;
+        font-size: 1.02rem !important;
+        margin-bottom: 8px !important;
+    }
+
+    div[role="radiogroup"] {
+        gap: 12px !important;
+    }
+
+    div[role="radiogroup"] label {
+        background: rgba(15, 23, 42, 0.75) !important;
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        padding: 12px 18px !important;
+        border-radius: 14px !important;
+        transition: all 0.25s ease !important;
+    }
+
+    div[role="radiogroup"] label:hover {
+        border-color: rgba(56, 189, 248, 0.5) !important;
+        background: rgba(10, 102, 194, 0.15) !important;
+    }
+
     .stButton > button {
         border-radius: 12px !important;
         font-weight: 600 !important;
@@ -256,6 +281,9 @@ st.markdown("""
 
 
 # Session state initialization
+if "workflow_choice" not in st.session_state:
+    st.session_state.workflow_choice = "Interactive Human Review"
+
 if "thread_id" not in st.session_state:
     st.session_state.thread_id = str(uuid.uuid4())
 
@@ -268,10 +296,15 @@ if "history" not in st.session_state:
 if "topic" not in st.session_state:
     st.session_state.topic = ""
 
-if "workflow_choice" not in st.session_state:
-    st.session_state.workflow_choice = "Human Review (humanintheloop.py)"
-
 if "custom_feedback_val" not in st.session_state:
+    st.session_state.custom_feedback_val = ""
+
+
+def on_workflow_change():
+    """Clear stale execution state when toggling reviewer mode to prevent lag and state mismatch."""
+    st.session_state.current_result = None
+    st.session_state.history = []
+    st.session_state.thread_id = str(uuid.uuid4())
     st.session_state.custom_feedback_val = ""
 
 
@@ -293,7 +326,7 @@ def execute_human_rewrite(feedback_str: str):
 
     status_box = st.status("🔄 AI Writer is processing your rewrite request...", expanded=True)
     with status_box:
-        st.write("📥 Human Feedback received:", feedback_str)
+        st.write("📥 Feedback received:", feedback_str)
         st.write("🔍 Tavily Search & Writer LLM generating revised draft...")
         time.sleep(0.3)
         
@@ -325,7 +358,7 @@ st.markdown("""
         </svg>
         <div>
             <div class="hero-title">LinkedIn Post Studio</div>
-            <div class="hero-subtitle">Multi-Agent LangGraph System with Tavily Search, AI Reviewer & Human-in-the-Loop workflows</div>
+            <div class="hero-subtitle">Multi-Agent LangGraph System with Tavily Web Search, AI Reviewer & Interactive Human-in-the-Loop workflows</div>
         </div>
     </div>
 </div>
@@ -358,7 +391,7 @@ with st.sidebar:
         st.rerun()
 
 
-# Workflow Selector & Status Box
+# Workflow Selector & Pipeline Diagram
 current_res = st.session_state.current_result
 is_interrupted = current_res and "__interrupt__" in current_res
 is_completed = current_res and "__interrupt__" not in current_res
@@ -367,12 +400,12 @@ step1_cls = "active" if not current_res else ""
 step2_cls = "active" if current_res and not is_completed else ""
 step3_cls = "active" if is_completed else ""
 
-review_label = "HUMAN REVIEW" if "human" in st.session_state.workflow_choice.lower() else "AI REVIEWER"
+review_label = "HUMAN REVIEW" if "Human" in st.session_state.workflow_choice else "AI REVIEWER"
 
 st.markdown(f"""
 <div class="workflow-diagram">
     <div class="wf-step {step1_cls}">
-        <span>1. WRITER</span>
+        <span>1. WRITER AGENT</span>
     </div>
     <div class="wf-arrow">➔</div>
     <div class="wf-step {step1_cls}">
@@ -397,20 +430,21 @@ with col_controls:
     st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.subheader("📝 1. Topic & Workflow Selection")
     
-    # Select which script/workflow file to use
-    selected_workflow = st.radio(
-        "Choose Reviewer Workflow System:",
+    # Select Reviewer System Mode directly bound to session state with instant callback
+    st.radio(
+        "Choose Reviewer Workflow:",
         options=[
-            "Human Review (humanintheloop.py)",
-            "Automated AI Review (iterative_tools.py)"
+            "Interactive Human Review",
+            "Autonomous AI Reviewer"
         ],
+        key="workflow_choice",
+        horizontal=True,
+        on_change=on_workflow_change,
         captions=[
-            "humanintheloop.py — Uses Tavily Search + interrupt() node to get your approval or feedback for rewrites.",
-            "iterative_tools.py — Uses Tavily Search + AI Reviewer node to iterate autonomously until approved."
-        ],
-        index=0 if "human" in st.session_state.workflow_choice.lower() else 1
+            "Human-in-the-Loop — Uses Tavily Search + interactive interrupts for your approval or feedback.",
+            "Autonomous AI — Uses Tavily Search + AI Reviewer node to iterate automatically until publish-ready."
+        ]
     )
-    st.session_state.workflow_choice = selected_workflow
 
     st.write("")
     # Topic Input
@@ -430,7 +464,7 @@ with col_controls:
         st.session_state.history = []
         st.session_state.thread_id = str(uuid.uuid4())
 
-        is_hitl = "human" in selected_workflow.lower()
+        is_hitl = "Human" in st.session_state.workflow_choice
         config = {"configurable": {"thread_id": st.session_state.thread_id}}
         
         initial_state = {
@@ -442,7 +476,7 @@ with col_controls:
             "attempt": 0,
         }
 
-        mode_name = "Human-in-the-Loop (humanintheloop.py)" if is_hitl else "Automated AI (iterative_tools.py)"
+        mode_name = "Interactive Human Review" if is_hitl else "Autonomous AI Reviewer"
         status_box = st.status(f"🤖 Running workflow using {mode_name}...", expanded=True)
         
         with status_box:
@@ -464,7 +498,7 @@ with col_controls:
                     "feedback": None,
                     "status": "awaiting_review"
                 })
-                status_box.update(label="✅ Initial Draft Ready for Review!", state="complete", expanded=False)
+                status_box.update(label="✅ Initial Draft Ready for Your Review!", state="complete", expanded=False)
             else:
                 final_draft = result.get("draft", "")
                 st.session_state.history.append({
@@ -506,7 +540,7 @@ with col_controls:
 
                 status_box = st.status("🎉 Finalizing post approval...", expanded=True)
                 with status_box:
-                    st.write("Sending approval signal to humanintheloop.py graph...")
+                    st.write("Sending approval signal to workflow engine...")
                     next_result = hitl_app.invoke(Command(resume="approved"), config=config)
                     st.session_state.current_result = next_result
                     status_box.update(label="🟢 Post Approved!", state="complete", expanded=False)
